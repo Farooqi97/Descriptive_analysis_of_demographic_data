@@ -1,3 +1,20 @@
+#Life expextancy at Birth and Under Age 5 mortality rate
+
+#Included Libraries
+install.packages("dplyr") 
+install.packages("Hmisc")
+install.packages("palmerpenguins")
+
+library("Hmisc")
+library(dplyr)
+library(tidyverse)
+library(palmerpenguins)
+library(corrplot)
+library(ggplot2)
+
+#Load the Dataset
+censusData = read.csv("C:/Users/census2002_2022.csv")
+
 #Get the dimension of Data -> Has 454 Rows and 8 Columns
 dim(censusData)
 noOfcountires <- unique(censusData$Country.Name)
